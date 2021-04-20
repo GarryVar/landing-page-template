@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/index.min.css" rel="stylesheet" type="text/css">
   <title>Portfolio landing page</title>
 </head>
+
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper container">
-      <div class="header__logo">
-        denis novik
+      <div class="header__name">
+        <p>denis novik</p>
       </div>
+      <nav class="header__menu menu">
+        <button class="menu__btn" arial-label="toggle navigation" type="button" aria-expanded="false">
+          <svg width="33" height="20">
+            <use class="menu__icon" xlink:href="images/sprite.svg#menu-icon"></use>
+            <!-- <use class="menu__cross" xlink:href="images/sprite.svg#menu-cross"></use> -->
+          </svg>
+        </button>
+        <div class="menu__inner menu--hidden">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="" class="menu__link menu__link--current">home</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">about me</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">skills</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">contacts</a>
+            </li>
+          </ul>
+          <div class="menu__langs">
+            <a href="" class="menu__langs-link">ru</a>
+            <span class="menu__langs-link--current">|</span>
+            <a href="" class="menu__langs-link  menu__langs-link--current">  eng</a>
+          </div>
+        </div>
+      </nav>
     </div>
   </header>
+  <main class="container">
+    <div class="header__descript">
+      <p>UX | UI designer</p>
+      <p>24 years old, Minsk</p>
+    </div>
+    <div class="header__image">
+      <img src="images/front_image.jpg" alt="leader of the website" width="316" height="478">
+    </div>
+
+  </main>
 </body>
 </html>

@@ -1,10 +1,27 @@
 .header__wrapper {
-  display: grid;
+  display: flex;
+
+  padding-top: 65px;
+  padding-bottom: 83px;
 }
 
-.header__logo {
-	width: 124px;
+.header__name {
+	max-width: 124px;
 	height: 106px;
-	text-transform: uppercase;
-	font-weight: bold;
+
+  p {
+	 font-size: 47px;
+	 font-weight: bold;
+	 text-transform: capitalize;
+	 line-height: 58px;
+  }
 }
+
+.header__menu {
+  flex-grow: 1;
+}
+
+.header__descript {
+  margin-bottom: 37px;
+}
+
