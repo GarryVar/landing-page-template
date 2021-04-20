@@ -1,19 +1,11 @@
 .header__wrapper {
-  display: grid;
-  grid-template-areas:
-    "name nav"
-    "descript descript"
-    "img img";
+  display: flex;
 
-  justify-content: center;
   padding-top: 65px;
   padding-bottom: 83px;
 }
 
 .header__name {
-  grid-area: name;
-  margin-bottom: 23px;
-
 	max-width: 124px;
 	height: 106px;
 
@@ -25,30 +17,11 @@
   }
 }
 
-.header__descript {
-  grid-area: descript;
-  margin-bottom: 37px;
-}
-
-.header__image {
-  grid-area: img;
-}
-
-.header__navigation {
-  grid-area: nav;
-}
-
-.header__btn {
-  display: block;
-  padding-top: 14px;
-  margin-left: auto;
-  width: 33px;
-  height: 20px;
-}
-
 .header__menu {
-  &--hidden {
-    display: none;
-  }
+  flex-grow: 1;
+}
+
+.header__descript {
+  margin-bottom: 37px;
 }
 

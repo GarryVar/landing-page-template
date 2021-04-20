@@ -14,40 +14,49 @@
       <div class="header__name">
         <p>denis novik</p>
       </div>
-      <div class="header__descript">
-        <p>UX | UI designer</p>
-        <p>24 years old, Minsk</p>
-      </div>
-      <div class="header__image">
-        <img src="images/front_image.jpg" alt="leader of the website" width="316" height="478">
-      </div>
-      <nav class="header__navigation">
-        <button class="header__btn" arial-label="toggle navigation" type="button">
-          <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="33" height="3.83721" fill="black"/>
-            <rect y="7.67383" width="33" height="3.83721" fill="black"/>
-            <rect y="15.3496" width="33" height="3.83721" fill="black"/>
+      <nav class="header__menu menu">
+        <button class="menu__btn" arial-label="toggle navigation" type="button" aria-expanded="false">
+          <svg width="33" height="20">
+            <use class="menu__icon" xlink:href="images/sprite.svg#menu-icon"></use>
+            <!-- <use class="menu__cross" xlink:href="images/sprite.svg#menu-cross"></use> -->
           </svg>
         </button>
-        <ul class="header__menu header__menu--hidden">
-          <li class="header__menu">
-            <a href="" class="header__menu-item">home</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="" class="header__menu-link">about me</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="" class="header__menu-link">skills</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="" class="header__menu-link">portfolio</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="" class="header__menu-link">contacts</a>
-          </li>
-        </ul>
+        <div class="menu__inner menu--hidden">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="" class="menu__link menu__link--current">home</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">about me</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">skills</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">contacts</a>
+            </li>
+          </ul>
+          <div class="menu__langs">
+            <a href="" class="menu__langs-link">ru</a>
+            <span class="menu__langs-link--current">|</span>
+            <a href="" class="menu__langs-link  menu__langs-link--current">  eng</a>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
+  <main class="container">
+    <div class="header__descript">
+      <p>UX | UI designer</p>
+      <p>24 years old, Minsk</p>
+    </div>
+    <div class="header__image">
+      <img src="images/front_image.jpg" alt="leader of the website" width="316" height="478">
+    </div>
+
+  </main>
 </body>
 </html>
