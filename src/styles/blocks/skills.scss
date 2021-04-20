@@ -1,0 +1,44 @@
+.skills__inner {
+  padding-top: 83px;
+}
+
+.skills__title {
+  margin-bottom: 50px;
+}
+
+.skills__text {
+  margin-bottom: 40px;
+}
+
+
+.skills__list {
+  display: grid;
+  row-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+}
+
+.skills__item {
+  position: relative;
+
+  padding-top: 90px;
+  height: 240px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 89px;
+    height: 89px;
+
+    background-color: red;
+  }
+}
+
+.skills__name {
+  font-size: 14px;
+  color: $basic-link;
+}
