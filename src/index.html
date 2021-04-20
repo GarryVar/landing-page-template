@@ -12,16 +12,15 @@
   <header class="header">
     <div class="header__wrapper container">
       <div class="header__name">
-        <p>denis novik</p>
+        <p>igor varekhov</p>
       </div>
       <nav class="header__menu menu">
         <button class="menu__btn" arial-label="toggle navigation" type="button" aria-expanded="false">
           <svg width="33" height="20">
             <use class="menu__icon" xlink:href="images/sprite.svg#menu-icon"></use>
-            <!-- <use class="menu__cross" xlink:href="images/sprite.svg#menu-cross"></use> -->
           </svg>
         </button>
-        <div class="menu__inner menu--hidden">
+        <div class="menu__inner menu__inner--hidden">
           <ul class="menu__list">
             <li class="menu__item">
               <a href="" class="menu__link menu__link--current">home</a>
@@ -48,15 +47,35 @@
       </nav>
     </div>
   </header>
-  <main class="container">
-    <div class="header__descript">
-      <p>UX | UI designer</p>
-      <p>24 years old, Minsk</p>
-    </div>
-    <div class="header__image">
-      <img src="images/front_image.jpg" alt="leader of the website" width="316" height="478">
-    </div>
 
+  <main>
+    <section class="intro">
+      <h1 class="visually-hidden">This is portfolio webpage of Igor Varekhov</h1>
+      <div class="intro__inner container">
+        <p>Junior Frontend Developer</p>
+        <p>32 years old, Simferopol</p>
+        <div class="intro__image">
+          <img src="images/igor.jpg" alt="leader of the website" width="316" height="478">
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__inner container">
+         <h2 class="title about__title">about me</h2>
+
+         <p class="text about__text">Hi, I'm Igor – junior frontend developer from Simferopol. I'm interesting in web development: html, css, native javascript and other frontend technologies</p>
+         <p class="text about__text">I'm finished courses "Html and css level 1 , level 2 and javascript" in <a href="https://htmlacademy.ru">HTML-Academy.</a></p>
+         <p class="text about__text">Ready to implement excellent projects with wonderful people.</p>
+         <p class="text about__text">I am also interested in writing electronic music in the style of <a href="https://en.wikipedia.org/wiki/Goa_trance">Goa trance</a>, my tracks were released on several labels at different times</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="skills__inner container">
+        <h2 class="title skills__title">skills</h2>
+      </div>
+    </section>
   </main>
 </body>
 </html>

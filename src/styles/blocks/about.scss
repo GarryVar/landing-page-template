@@ -1,0 +1,36 @@
+.about {
+  background-color: $basic-section-bg;
+}
+
+.about__inner {
+  padding-top: 81px;
+  padding-bottom: 75px;
+}
+
+.about__title {
+  margin-bottom: 30px;
+}
+
+.about__text {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid $basic-text;
+}
+
+.about__text {
+  a {
+    display: inline;
+    color: $basic-hyper-link;
+    text-decoration: underline;
+  }
+}
+
+.about__image {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
+}
