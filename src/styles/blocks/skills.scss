@@ -15,30 +15,36 @@
   display: grid;
   row-gap: 40px;
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  padding-top: 40px;
 }
 
 .skills__item {
   position: relative;
 
-  padding-top: 90px;
-  height: 240px;
+  min-height: 205px;
+  background-repeat: no-repeat;
+  background-size: 89px;
+  background-position: top center;
 
-  &::before {
-    content: "";
-    position: absolute;
+  &--html {
+    background-image: url("../../images/html.png");
+  }
 
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  &--css {
+    background-image: url("../../images/css.png");
+  }
 
-    width: 89px;
-    height: 89px;
-
-    background-color: red;
+  &--js {
+    background-image: url("../../images/js.png");
   }
 }
 
 .skills__name {
+  padding-top: 103px;
   font-size: 14px;
   color: $basic-link;
+
+  sup {
+    color: $basic-text;
+  }
 }
