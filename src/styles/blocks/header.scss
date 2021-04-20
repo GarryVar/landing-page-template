@@ -1,3 +1,14 @@
 .header__wrapper {
   display: grid;
+  justify-content: center;
+}
+
+.header__name {
+	max-width: 124px;
+	height: 106px;
+
+	font-size: 47px;
+	font-weight: bold;
+	text-transform: capitalize;
+	line-height: 58px;
 }
