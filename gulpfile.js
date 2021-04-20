@@ -27,7 +27,7 @@ exports.clean = clean;
 const copy = () => {
   return gulp.src([
     'src/fonts/**/*.{woff, woff2}',
-    'src/img/**',
+    'src/images/**',
     'src/scripts/**/*.js',
     'src/*.ico',
     'src/data/**'
@@ -87,22 +87,22 @@ exports.scripts = scripts;
 
 // Images
 const images = () => {
-  return gulp.src('src/img')
+  return gulp.src('src/images')
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.mozjpeg({progressive: true}),
     imagemin.svgo()
     ]))
-    .pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest('dist/images'))
 };
 exports.images = images;
 
 
 // Webp
 const webp = () =>  {
-  return gulp.src('src/img')
+  return gulp.src('src/images')
   .pipe(webpi({quality: 50}))
-  .pipe(gulp.dest('dist/img'))
+  .pipe(gulp.dest('dist/images'))
 };
 exports.webp = webp;
 
