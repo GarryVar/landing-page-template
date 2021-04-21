@@ -22,3 +22,16 @@
   margin-bottom: 37px;
 }
 
+
+@media(min-width: 620px) {
+  .header__wrapper {
+    flex-direction: column;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 250px;
+  }
+  .header__name {
+    order: 1;
+  }
+}

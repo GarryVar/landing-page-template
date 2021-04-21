@@ -53,6 +53,11 @@ span {
   &--current {
     color: $basic-text;
   }
+
+  &:hover,
+  &:focus {
+    color: $basic-text;
+  }
 }
 
 .menu__langs {
@@ -70,5 +75,44 @@ span {
 
   &--current {
     color: $basic-text;
+  }
+}
+
+@media(min-width: 620px) {
+  .menu__btn {
+    display: none;
+  }
+
+  .menu__inner {
+    position: static;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    min-height: 60px;
+    border-bottom:  1px solid $basic-link;
+
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .menu__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu__link {
+    font-size: 18px;
+  }
+
+  .menu__langs {
+    position: fixed;
+    bottom: 110px;
+  }
+
+  .menu__langs-link {
+    font-size: 16px;
   }
 }

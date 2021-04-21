@@ -1,5 +1,6 @@
 .skills__inner {
   padding-top: 83px;
+  padding-bottom: 83px;
 }
 
 .skills__title {
@@ -13,8 +14,8 @@
 
 .skills__list {
   display: grid;
-  row-gap: 40px;
-  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   padding-top: 40px;
 }
 
@@ -52,5 +53,12 @@
 
   sup {
     color: $basic-text;
+  }
+}
+
+@media(min-width: 620px) {
+  .skills__description {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
