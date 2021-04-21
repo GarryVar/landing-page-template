@@ -24,6 +24,10 @@
   background-color: $basic-background;
 
   z-index: 1;
+
+  &--hidden {
+     display: none;
+  }
 }
 
 .menu__list {
@@ -50,10 +54,6 @@ span {
   &--current {
     color: $basic-text;
   }
-}
-
-.menu__icon {
-  fill: red;
 }
 
 
