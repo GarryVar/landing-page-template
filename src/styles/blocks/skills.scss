@@ -1,6 +1,6 @@
 .skills__inner {
-  padding-top: 83px;
-  padding-bottom: 83px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .skills__title {
@@ -60,5 +60,11 @@
   .skills__description {
     font-size: 16px;
     line-height: 25px;
+  }
+}
+
+@media(min-width: 768px) {
+  .skills__inner {
+    @include centered;
   }
 }

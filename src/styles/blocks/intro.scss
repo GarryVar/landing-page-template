@@ -2,17 +2,31 @@
   padding-bottom: 83px;
 }
 
+.intro__name {
+  margin-bottom: 20px;
+  p {
+   font-size: 47px;
+   font-weight: bold;
+   text-transform: capitalize;
+   line-height: 58px;
+  }
+}
+
 .intro__image {
   margin-top: 36px;
 }
 
 @media(min-width: 620px) {
-  .intro__inner {
+  .intro__content {
     display: grid;
     grid-gap: 20px;
 
     grid-template-areas: "image text";
 
+  }
+
+  .intro__name {
+    position: static;
   }
 
   .intro__image {
@@ -36,6 +50,7 @@
     text-align: right;
   }
 }
+
 
 @media(min-width: 768px) {
   .intro__text {

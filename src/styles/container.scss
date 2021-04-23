@@ -9,15 +9,18 @@
   }
 }
 
-@media(min-width: 768px) {
+
+@media(min-width: 920px) {
   .container {
     padding: 0 100px;
   }
 }
 
-
-@media(min-width: 920px) {
+@media(min-width: 1024px) {
   .container {
-    padding: 0 160px;
+    padding: 0 180px;
   }
 }
+
+
+

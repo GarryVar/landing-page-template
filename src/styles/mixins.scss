@@ -1,0 +1,12 @@
+@mixin section_padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@mixin centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 100vh;
+}
