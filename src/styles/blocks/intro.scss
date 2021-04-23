@@ -2,6 +2,79 @@
   padding-bottom: 83px;
 }
 
+.intro__name {
+  margin-bottom: 20px;
+  p {
+   font-size: 47px;
+   font-weight: bold;
+   text-transform: capitalize;
+   line-height: 58px;
+  }
+}
+
 .intro__image {
   margin-top: 36px;
 }
+
+@media(min-width: 620px) {
+  .intro__content {
+    display: grid;
+    grid-gap: 20px;
+
+    grid-template-areas: "image text";
+
+  }
+
+  .intro__name {
+    position: static;
+  }
+
+  .intro__image {
+    grid-area: image;
+    margin-top: 0;
+
+    width: 280px;
+
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .intro__text {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    font-size: 25px;
+    line-height: 30px;
+    text-align: right;
+  }
+}
+
+
+@media(min-width: 768px) {
+  .intro__text {
+    justify-content: center;
+
+    font-size: 30px;
+    line-height: 40px;
+    text-align: right;
+  }
+}
+
+@media(min-width: 920px) {
+  .intro__text {
+    justify-content: center;
+
+    line-height: 40px;
+    text-align: right;
+  }
+}
+
+@media(min-width: 1024px) {
+  .intro__text {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+

@@ -3,8 +3,7 @@
 }
 
 .about__inner {
-  padding-top: 81px;
-  padding-bottom: 75px;
+  @include centered;
 }
 
 .about__title {
